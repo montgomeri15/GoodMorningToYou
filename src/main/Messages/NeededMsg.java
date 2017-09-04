@@ -6,7 +6,7 @@ public class NeededMsg extends AllMsg implements TimesOfDay {
     }
 
     public String morning() {
-        return null;
+        return "Good morning, World!";
     }
 
     public String day() {
@@ -14,10 +14,10 @@ public class NeededMsg extends AllMsg implements TimesOfDay {
     }
 
     public String evening() {
-        return null;
+        return "Good evening, World!";
     }
 
     public String night() {
-        return null;
+        return "Good night, World!";
     }
 }
