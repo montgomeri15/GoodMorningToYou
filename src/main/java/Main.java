@@ -1,3 +1,4 @@
+import java.awt.im.InputContext;
 import java.io.IOException;
 
 public class Main {
@@ -6,11 +7,5 @@ public class Main {
 
         GetTime getTime = new GetTime();
         getTime.Time();
-
-
-
-
-
-
     }
 }
