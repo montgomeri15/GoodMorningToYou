@@ -8,15 +8,12 @@ public class GetTime {
 
     public void Time(){
 
-        Locale locale = new Locale("ru");
-
         DateFormat dateFormat = new SimpleDateFormat("HH");
         Date date = new Date();
-        System.out.println();
-        int hour = Integer.parseInt(dateFormat.format(date));
+        int hour = Integer.valueOf(dateFormat.format(date));
 
-        System.out.println(hour);
-
+        NeededMsg neededMsg = new NeededMsg("русский", hour);
+        System.out.println(neededMsg.day());
 
     }
 }

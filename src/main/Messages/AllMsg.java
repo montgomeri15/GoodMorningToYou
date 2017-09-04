@@ -1,12 +1,12 @@
 public class AllMsg {
 
     String language;
-    String msg;
+    int hour;
 
-    public AllMsg(String language, String msg) {
+    public AllMsg(String language, int hour) {
         this.language = language;
-        this.msg = msg;
+        this.hour = hour;
 
-        System.out.println(language + "\n" + msg);
+        System.out.println(language + ", " + hour);
     }
 }

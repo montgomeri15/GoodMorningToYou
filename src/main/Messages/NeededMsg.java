@@ -1,8 +1,8 @@
 public class NeededMsg extends AllMsg implements TimesOfDay {
 
 
-    public NeededMsg(String language, String msg) {
-        super(language, msg);
+    public NeededMsg(String language, int hour) {
+        super(language, hour);
     }
 
     public String morning() {
@@ -10,7 +10,7 @@ public class NeededMsg extends AllMsg implements TimesOfDay {
     }
 
     public String day() {
-        return null;
+        return "Good day, World!";
     }
 
     public String evening() {
