@@ -16,13 +16,13 @@ public class GetTime {
         GetLanguage getLanguage = new GetLanguage();
         NeededMsg neededMsg = new NeededMsg(getLanguage.Language(), hour);
 
-        if (hour >= 6 && hour <= 9) {
+        if (hour >= 6 && hour < 9) {
             System.out.println(neededMsg.morning());
-        } else if (hour >= 9 && hour <= 19) {
+        } else if (hour >= 9 && hour < 19) {
             System.out.println(neededMsg.day());
-        } else if (hour >= 19 && hour <= 23) {
+        } else if (hour >= 19 && hour < 23) {
             System.out.println(neededMsg.evening());
-        } else if (hour >= 23 && hour <= 6) {
+        } else if (hour >= 23 || hour < 6) {
             System.out.println(neededMsg.night());
         } else {
             System.out.println("Ошибка");

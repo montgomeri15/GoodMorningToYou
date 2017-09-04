@@ -11,7 +11,6 @@ public class NeededMsg extends AllMsg implements TimesOfDay {
     GetLanguage getLanguage = new GetLanguage();
     String selected_language = getLanguage.Language();
 
-
     public NeededMsg(String language, int hour) throws IOException {
         super(language, hour);
     }
@@ -47,4 +46,6 @@ public class NeededMsg extends AllMsg implements TimesOfDay {
             return array[7];
         } else return null;
     }
+
+
 }
