@@ -2,6 +2,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
+import java.util.logging.Logger;
 
 public class NeededMsg extends AllMsg implements TimesOfDay {
 
@@ -13,6 +14,15 @@ public class NeededMsg extends AllMsg implements TimesOfDay {
 
     public NeededMsg(String language, int hour) throws IOException {
         super(language, hour);
+
+        Logger logger = Logger.getLogger("MyLog");
+        logger.setUseParentHandlers(false);
+
+        try {
+            logger.info("Message");
+        } catch (SecurityException e) {
+            e.printStackTrace();
+        }
     }
 
     public String morning() {
