@@ -37,7 +37,7 @@ public class NeededMsgTest {
 
             if (s.equalsIgnoreCase("en")){
                 assertEquals(morning_en, neededMsg.morning());
-            } else {
+            } else if (s.equalsIgnoreCase("ru")) {
                 assertEquals(morning_ru, neededMsg.morning());
             }
         }
@@ -52,7 +52,7 @@ public class NeededMsgTest {
 
             if (s.equalsIgnoreCase("en")){
                 assertEquals(day_en, neededMsg.day());
-            } else {
+            } else if (s.equalsIgnoreCase("ru")) {
                 assertEquals(day_ru, neededMsg.day());
             }
         }
@@ -67,7 +67,7 @@ public class NeededMsgTest {
 
             if (s.equalsIgnoreCase("en")){
                 assertEquals(evening_en, neededMsg.evening());
-            } else {
+            } else if (s.equalsIgnoreCase("ru")) {
                 assertEquals(evening_ru, neededMsg.evening());
             }
         }
@@ -82,7 +82,7 @@ public class NeededMsgTest {
 
             if (s.equalsIgnoreCase("en")){
                 assertEquals(night_en, neededMsg.night());
-            } else {
+            } else if (s.equalsIgnoreCase("ru")) {
                 assertEquals(night_ru, neededMsg.night());
             }
         }
