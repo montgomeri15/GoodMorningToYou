@@ -1,7 +1,8 @@
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
+package com;
+
+import com.GetTime;
+
 import java.io.IOException;
-import java.io.PrintStream;
 import java.util.logging.FileHandler;
 import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;

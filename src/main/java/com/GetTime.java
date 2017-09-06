@@ -1,12 +1,11 @@
-import java.awt.*;
-import java.awt.im.InputContext;
+package com;
+import tom.NeededMsg;
+
 import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.logging.FileHandler;
 import java.util.logging.Logger;
-import java.util.logging.SimpleFormatter;
 
 public class GetTime {
 
@@ -17,6 +16,8 @@ public class GetTime {
         int hour = Integer.valueOf(dateFormat.format(date));
 
         GetLanguage getLanguage = new GetLanguage();
+
+
         NeededMsg neededMsg = new NeededMsg(getLanguage.Language(), hour);
 
         Logger logger = Logger.getLogger("MyLog");

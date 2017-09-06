@@ -1,3 +1,5 @@
+package tom;
+
 public interface TimesOfDay {
 
     String morning();

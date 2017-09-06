@@ -1,3 +1,8 @@
+package tom;
+
+import com.GetLanguage;
+import tom.AllMsg;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;

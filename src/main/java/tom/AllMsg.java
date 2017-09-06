@@ -1,3 +1,5 @@
+package tom;
+
 public class AllMsg {
 
     String language;

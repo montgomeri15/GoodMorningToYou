@@ -1,3 +1,5 @@
+package com;
+
 import java.awt.im.InputContext;
 
 public class GetLanguage {

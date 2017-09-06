@@ -1,3 +1,5 @@
+import tom.NeededMsg;
+
 import static org.junit.Assert.*;
 
 import java.awt.im.InputContext;
