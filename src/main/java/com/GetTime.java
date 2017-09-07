@@ -18,6 +18,7 @@ public class GetTime {
         GetLanguage getLanguage = new GetLanguage();
 
         NeededMsg neededMsg = new NeededMsg(getLanguage.Language(), hour);
+        System.out.println("Time: " + hour);
 
         Logger logger = Logger.getLogger("MyLog");
         logger.setUseParentHandlers(false);

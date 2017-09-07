@@ -1,8 +1,8 @@
-сен 08, 2017 12:08:04 AM com.Main main
+сен 08, 2017 12:34:36 AM com.Main main
 INFO: Starting the program
-сен 08, 2017 12:08:04 AM tom.NeededMsg <init>
-INFO: Message
-сен 08, 2017 12:08:04 AM com.GetTime Time
+сен 08, 2017 12:34:36 AM tom.NeededMsg <init>
+INFO: Let's see what time is now.
+сен 08, 2017 12:34:36 AM com.GetTime Time
 INFO: Getting Time
-сен 08, 2017 12:08:04 AM com.GetTime Time
+сен 08, 2017 12:34:36 AM com.GetTime Time
 INFO: Night: all is OK!

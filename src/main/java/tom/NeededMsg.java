@@ -18,7 +18,7 @@ public class NeededMsg extends AllMsg implements TimesOfDay {
         logger.setUseParentHandlers(false);
 
         try {
-            logger.info("Message");
+            logger.info("Let's see what time is now.");
         } catch (SecurityException e) {
             e.printStackTrace();
         }
