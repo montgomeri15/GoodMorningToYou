@@ -1,8 +1,8 @@
-ΡΠµΠ½ 07, 2017 11:27:25 AM com.Main main
+ρεν 07, 2017 11:26:59 PM com.Main main
 INFO: Starting the program
-ΡΠµΠ½ 07, 2017 11:27:25 AM tom.NeededMsg <init>
+ρεν 07, 2017 11:26:59 PM tom.NeededMsg <init>
 INFO: Message
-ΡΠµΠ½ 07, 2017 11:27:25 AM com.GetTime Time
+ρεν 07, 2017 11:26:59 PM com.GetTime Time
 INFO: Getting Time
-ΡΠµΠ½ 07, 2017 11:27:25 AM com.GetTime Time
-INFO: Day: all is OK!
+ρεν 07, 2017 11:26:59 PM com.GetTime Time
+INFO: Night: all is OK!
