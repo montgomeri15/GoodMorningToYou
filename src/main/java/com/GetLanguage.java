@@ -1,14 +1,15 @@
 package com;
 
-import java.awt.im.InputContext;
+import java.util.Locale;
+import java.util.ResourceBundle;
 
 public class GetLanguage {
 
-    public String Language() {
+    public ResourceBundle Language() {
 
-        InputContext context = InputContext.getInstance();
-        String lang = context.getLocale().getDisplayLanguage();
-        return lang;
+        System.out.println("Locale: " + Locale.getDefault());
+        ResourceBundle res = ResourceBundle.getBundle("Lang");
+        return res;
     }
 }
 

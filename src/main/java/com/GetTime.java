@@ -9,14 +9,13 @@ import java.util.logging.Logger;
 
 public class GetTime {
 
+    DateFormat dateFormat = new SimpleDateFormat("HH");
+    Date date = new Date();
+    int hour = Integer.valueOf(dateFormat.format(date));
+
     public void Time() throws IOException {
 
-        DateFormat dateFormat = new SimpleDateFormat("HH");
-        Date date = new Date();
-        int hour = Integer.valueOf(dateFormat.format(date));
-
         GetLanguage getLanguage = new GetLanguage();
-
 
         NeededMsg neededMsg = new NeededMsg(getLanguage.Language(), hour);
 

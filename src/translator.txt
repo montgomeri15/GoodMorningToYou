@@ -1,8 +1,0 @@
-Good morning, World!
-Доброе утро, мир!
-Good day, World!
-Добрый день, мир!
-Good evening, World!
-Добрый вечер, мир!
-Good night, World!
-Доброй ночи, мир!
