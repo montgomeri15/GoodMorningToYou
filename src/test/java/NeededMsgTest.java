@@ -1,3 +1,4 @@
+import com.GetLanguage;
 import tom.NeededMsg;
 
 import static org.junit.Assert.*;
@@ -19,7 +20,8 @@ public class NeededMsgTest {
     private static final String night_en = "Good night, World!";
     private static final String night_ru = "Доброй ночи, мир!";
 
-    String s = InputContext.getInstance().getLocale().getDisplayLanguage();
+    GetLanguage getLanguage = new GetLanguage();
+    String selected_language = getLanguage.Language();
 
     DateFormat dateFormat = new SimpleDateFormat("HH");
     Date date = new Date();
@@ -31,13 +33,13 @@ public class NeededMsgTest {
     @org.junit.Test
     public void morning() throws Exception {
 
-        NeededMsg neededMsg = new NeededMsg(s, hour);
+        NeededMsg neededMsg = new NeededMsg(selected_language, hour);
 
         if (hour >= 6 && hour < 9){
 
-            if (s.equalsIgnoreCase("en")){
+            if (selected_language.equalsIgnoreCase("english")){
                 assertEquals(morning_en, neededMsg.morning());
-            } else if (s.equalsIgnoreCase("ru")) {
+            } else if (selected_language.equalsIgnoreCase("русский")) {
                 assertEquals(morning_ru, neededMsg.morning());
             }
         }
@@ -46,13 +48,13 @@ public class NeededMsgTest {
     @org.junit.Test
     public void day() throws Exception {
 
-        NeededMsg neededMsg = new NeededMsg(s, hour);
+        NeededMsg neededMsg = new NeededMsg(selected_language, hour);
 
         if (hour >= 9 && hour < 19){
 
-            if (s.equalsIgnoreCase("en")){
+            if (selected_language.equalsIgnoreCase("english")){
                 assertEquals(day_en, neededMsg.day());
-            } else if (s.equalsIgnoreCase("ru")) {
+            } else if (selected_language.equalsIgnoreCase("русский")) {
                 assertEquals(day_ru, neededMsg.day());
             }
         }
@@ -61,13 +63,13 @@ public class NeededMsgTest {
     @org.junit.Test
     public void evening() throws Exception {
 
-        NeededMsg neededMsg = new NeededMsg(s, hour);
+        NeededMsg neededMsg = new NeededMsg(selected_language, hour);
 
         if (hour >= 19 && hour < 23){
 
-            if (s.equalsIgnoreCase("en")){
+            if (selected_language.equalsIgnoreCase("english")){
                 assertEquals(evening_en, neededMsg.evening());
-            } else if (s.equalsIgnoreCase("ru")) {
+            } else if (selected_language.equalsIgnoreCase("русский")) {
                 assertEquals(evening_ru, neededMsg.evening());
             }
         }
@@ -76,13 +78,13 @@ public class NeededMsgTest {
     @org.junit.Test
     public void night() throws Exception {
 
-        NeededMsg neededMsg = new NeededMsg(s, hour);
+        NeededMsg neededMsg = new NeededMsg(selected_language, hour);
 
         if (hour >= 23 || hour < 6){
 
-            if (s.equalsIgnoreCase("en")){
+            if (selected_language.equalsIgnoreCase("english")){
                 assertEquals(night_en, neededMsg.night());
-            } else if (s.equalsIgnoreCase("ru")) {
+            } else if (selected_language.equalsIgnoreCase("русский")) {
                 assertEquals(night_ru, neededMsg.night());
             }
         }
