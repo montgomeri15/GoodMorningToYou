@@ -1,25 +1,24 @@
 package tom;
 
 import com.GetLanguage;
-
+import org.apache.log4j.Logger;
 import java.io.IOException;
 import java.util.ResourceBundle;
-import java.util.logging.Logger;
 
 public class NeededMsg implements TimesOfDay {
+
+    private static Logger logger = Logger.getLogger(NeededMsg.class);
 
     GetLanguage getLanguage = new GetLanguage();
     ResourceBundle selected_language = getLanguage.Language();
 
-    public NeededMsg() throws IOException {
-
-        Logger logger = Logger.getLogger("MyLog");
-        logger.setUseParentHandlers(false);
+    public void MsgLog() throws IOException {
 
         try {
             logger.info("Let's see what time is now.");
         } catch (SecurityException e) {
             e.printStackTrace();
+            logger.error("ERROR! The attempt failed.");
         }
     }
 
@@ -38,6 +37,4 @@ public class NeededMsg implements TimesOfDay {
     public String night() {
         return selected_language.getString("Night");
     }
-
-
 }

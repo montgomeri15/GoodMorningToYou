@@ -1,36 +1,22 @@
 package com;
 
+import org.apache.log4j.Logger;
 import java.io.IOException;
 import java.util.Date;
-import java.util.logging.FileHandler;
-import java.util.logging.Logger;
-import java.util.logging.SimpleFormatter;
 
 public class Main {
 
+    private static String LOG_PROPERTIES_FILE = "./src/main/resources/log4j.properties";
+    private static Logger logger = Logger.getLogger(Main.class);
+
     public static void main(String[] args) throws IOException {
 
-        Logger logger = Logger.getLogger("MyLog");
-        logger.setUseParentHandlers(false);
-        FileHandler fh;
+        Config config = new Config(LOG_PROPERTIES_FILE);
+        config.init();
 
-        try {
-
-            fh = new FileHandler("C:/Users/Admin/Desktop/GoodMorningToYou/MyLogFile.log");
-            logger.addHandler(fh);
-            SimpleFormatter formatter = new SimpleFormatter();
-            fh.setFormatter(formatter);
-
-            logger.info("Starting the program");
-
-        } catch (SecurityException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
+        logger.info("Starting the program...");
+        logger.info("start in the next line...", new Exception());
         Date date = new Date();
-
         GetTime getTime = new GetTime();
         getTime.Time(date);
     }
