@@ -1,1 +1,1 @@
-[![Build Status](https://travis-ci.org/montgomeri15/GoodMorningToYou.svg?branch=master)](https://travis-ci.org/montgomeri15/GoodMorningToYou/builds/273059448)
+[![Build Status](https://travis-ci.org/montgomeri15/GoodMorningToYou.svg?branch=master)](https://travis-ci.org/montgomeri15/GoodMorningToYou/builds/274757732)
