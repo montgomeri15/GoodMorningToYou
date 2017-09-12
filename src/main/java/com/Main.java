@@ -1,8 +1,7 @@
 package com;
 
-import com.GetTime;
-
 import java.io.IOException;
+import java.util.Date;
 import java.util.logging.FileHandler;
 import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
@@ -30,7 +29,9 @@ public class Main {
             e.printStackTrace();
         }
 
+        Date date = new Date();
+
         GetTime getTime = new GetTime();
-        getTime.Time();
+        getTime.Time(date);
     }
 }

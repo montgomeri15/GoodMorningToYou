@@ -6,13 +6,12 @@ import java.io.IOException;
 import java.util.ResourceBundle;
 import java.util.logging.Logger;
 
-public class NeededMsg extends AllMsg implements TimesOfDay {
+public class NeededMsg implements TimesOfDay {
 
     GetLanguage getLanguage = new GetLanguage();
     ResourceBundle selected_language = getLanguage.Language();
 
-    public NeededMsg(ResourceBundle language, int hour) throws IOException {
-        super(language, hour);
+    public NeededMsg() throws IOException {
 
         Logger logger = Logger.getLogger("MyLog");
         logger.setUseParentHandlers(false);
